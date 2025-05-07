@@ -1,0 +1,292 @@
+.container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100svh;
+  background-color: var(--color-primary, #005dd6);
+  background-color: #5ec0e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 span,
+.container h1 label,
+.container h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 4.5rem;
+  z-index: 3;
+  text-shadow: 0px 5px 5px #000d;
+}
+
+.container h1 {
+  font-size: 25vw;
+  font-weight: 500;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  animation: in-out 5s linear both 1s;
+  animation-delay: 0.5s;
+  width: 90vw;
+}
+
+@keyframes in-out {
+  0% {
+    opacity: 1;
+    transform: translateY(-100vh);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container h1 span {
+  font-size: 20vw;
+}
+
+.container h1 label {
+  font-size: 20vw;
+  font-weight: lighter;
+}
+
+.container h1 label small {
+  color: var(--color-primary, #005dd6);
+}
+
+.container h1 small {
+  font-size: 10vw;
+  letter-spacing: 0.5rem;
+}
+
+.container h3,
+.container h2 {
+  font-size: 15vw;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  width: 90vw;
+}
+
+.container h2 {
+  animation: left-to-right 5s linear both 1s;
+  animation-delay: 5s;
+  color: var(--color-primary, #005dd6);
+  text-shadow: 0px 5px 5px #fffd;
+}
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container h3 {
+  animation: right-to-left 5s linear both 1s;
+  animation-delay: 10s;
+  color: var(--color-secondary, #ff00ee);
+  text-shadow: 0px 5px 5px #000d;
+}
+
+@keyframes right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50vw);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.background-shape {
+  background-image: url(../../../assets/img/fondo/fondo3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 5px 10px #000d);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100svh;
+  z-index: 1;
+}
+
+.container .decoracion {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 50vw;
+  height: auto;
+  z-index: 2;
+  overflow: hidden;
+  filter: drop-shadow(0px 5px 5px #000d);
+}
+
+.container .decoracion.decoracion-1 {
+  top: -10svh;
+  right: 5vw;
+  left: auto;
+}
+
+.container .decoracion.decoracion-2 {
+  top: -10svh;
+  right: -20vw;
+  left: auto;
+}
+
+.container .decoracion.decoracion-3 {
+  top: 0;
+  right: -20vw;
+  left: auto;
+}
+
+.container .decoracion.decoracion-4 {
+  top: -10svh;
+  left: -10vw;
+}
+
+.container .decoracion.decoracion-5 {
+  top: 80svh;
+  left: -20vw;
+}
+
+.container .decoracion.decoracion-6 {
+  top: 40svh;
+  right: -25vw;
+  left: auto;
+}
+
+.container .decoracion.decoracion-7 {
+  top: 90svh;
+  right: -10vw;
+  left: auto;
+}
+
+.container .decoracion.decoracion-8 {
+  top: 75svh;
+  left: 10vw;
+  width: 15vw;
+  z-index: 1;
+}
+
+.container .decoracion.decoracion-9 {
+  top: 50svh;
+  left: auto;
+  right: -5vw;
+  width: 15vw;
+}
+
+.container .decoracion.decoracion-10 {
+  top: 75svh;
+  left: auto;
+  right: 0;
+  width: 45vw;
+  z-index: 1;
+  filter: none;
+}
+
+.container .decoracion.decoracion-11 {
+  top: 10svh;
+  left: auto;
+  right: 10vw;
+  width: 15vw;
+}
+
+.container .decoracion.decoracion-12 {
+  top: 10svh;
+  left: 25vw;
+  width: 15vw;
+}
+
+.container .decoracion.decoracion-13 {
+  top: 90svh;
+  left: auto;
+  right: -3vw;
+  width: 15vw;
+}
+
+.container .decoracion.decoracion-14 {
+  top: 40svh;
+  left: 0;
+  width: 15vw;
+}
+
+.container .personaje2 {
+  z-index: 2;
+  position: absolute;
+  top: 5svh;
+  width: 40vw;
+  height: auto;
+  left: 0;
+}
+
+.container .personaje4,
+.container .personaje5 {
+  z-index: 2;
+  position: absolute;
+  top: 40svh;
+  width: 50vw;
+  height: auto;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .personaje4 {
+  animation: to-right 5s linear both 10s;
+}
+
+@keyframes to-right {
+  0% {
+    transform: translateX(-150vw);
+  }
+  100% {
+    display: none;
+    transform: translateX(150vw);
+  }
+}
+
+.container .personaje5 {
+  animation: to-left 5s linear both 11s;
+}
+
+@keyframes to-left {
+  0% {
+    transform: translateX(150vw);
+  }
+  100% {
+    display: none;
+    transform: translateX(-150vw);
+  }
+}

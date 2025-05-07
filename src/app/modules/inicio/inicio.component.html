@@ -1,0 +1,38 @@
+<div class="background-shape"></div>
+<section class="container">
+  <h1>
+    <span>¿PRINCESA</span>
+    o
+    <label>PRÍNCIPE?</label>
+  </h1>
+
+  <h2>¿Cual será el género de nuestro esperado bebé?</h2>
+  <h3>¡Descubre con nosotros esta INCREIBLE NOTICIA!</h3>
+
+  <img
+    *ngFor="let i of imagenesAmostrar"
+    [src]="'../../../assets/img/fondo/decoracion' + i + '.png'"
+    alt="decoracion"
+    class="decoracion"
+    [ngClass]="'decoracion-' + i"
+    (load)="onImagenCargada()"
+  />
+
+  <img
+    src="../../../assets/img/personaje2/personaje2-1.png"
+    alt="personaje2"
+    class="personaje2"
+  />
+
+  <img
+    src="../../../assets/img/personaje4/personaje4.png"
+    alt="personaje4"
+    class="personaje4"
+  />
+
+  <img
+    src="../../../assets/img/personaje5/personaje5.png"
+    alt="personaje5"
+    class="personaje5"
+  />
+</section>

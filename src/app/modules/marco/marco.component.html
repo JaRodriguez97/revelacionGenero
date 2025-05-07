@@ -1,0 +1,58 @@
+<section class="container">
+  <header>
+    <video
+      autoplay
+      loop
+      muted
+      src="../../../assets/img/protagonista/protagonista.mp4"
+      alt="imagen del bebé"
+      class="protagonista"
+    ></video>
+    <img
+      src="../../../assets/img/protagonista/eferas.webp"
+      alt="marco principal"
+      class="marco"
+    />
+  </header>
+
+  <main>
+    <h2 #titulo>
+      <span>Angela</span>
+      y
+      <label>Jesus</label>
+
+      <p>
+        Como padres llenos de amor y esperanza, queremos que nos acompañes junto
+        a tu familia en uno de los días más importantes de nuestras vidas.
+      </p>
+    </h2>
+    <img
+      src="../../../assets/img/principal/principal2.png"
+      alt=""
+      class="principal"
+    />
+
+    <section class="datosInfo">
+      <img
+        src="../../../assets/img/personaje6/personaje6.webp"
+        alt="personaje6"
+        class="personaje6"
+      />
+      <address>
+        <p>Acompañanos a Celebrar en:</p>
+        <label>Metropolitano del Norte</label>
+        <label>Cra. 1a11#69-20</label>
+        <span>18 Mayo - 3:30pm</span
+        ><!-- Actualizar fechas y terminar de organizar elementos -->
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <img
+      *ngFor="let i of [1, 2, 3, 4, 5, 6, 7].reverse()"
+      [src]="'../../../assets/img/fondo/decoracion' + i + '.png'"
+      alt="decoracion"
+    />
+  </footer>
+</section>

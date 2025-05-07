@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.cdnfonts.com/css/saiyan-sans");
+
+:root {
+  --color-primary: #005dd6;
+  --color-secondary: #ff00ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Saiyan Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 16px; /* Base */
+}
+
+body {
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+}
+
+span {
+  font-weight: 400;
+  font-style: italic;
+  -webkit-text-stroke: 0.5px var(--color-secondary,#ff00ee); /* No funciona en todos los navegadores las variables */
+  font-weight: bold;
+}
+
+label,
+strong {
+  font-size: 15vw;
+  -webkit-text-stroke: 0.5px white;
+  color: var(--color-secondary,#ff00ee);
+  font-weight: 500;
+}
+
+label {
+  color: var(--color-primary, #005dd6);
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: -300px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  animation: to-top 1s linear both 1s;
+  overflow: hidden;
+}
+
+@keyframes to-top {
+  0% {
+    bottom: -300px;
+  }
+  100% {
+    bottom: -60px;
+  }
+}
+
+footer img {
+  width: 40vw;
+  height: auto;
+  object-fit: fill;
+  margin-inline: -40%;
+  filter: drop-shadow(0 5px 5px black);
+}
+
+footer img:nth-child(2) {
+  z-index: 3;
+  transition-delay: 300ms;
+}
+
+footer img:nth-child(3) {
+  z-index: 2;
+  transition-delay: 600ms;
+}
