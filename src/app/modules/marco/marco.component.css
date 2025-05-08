@@ -25,6 +25,7 @@ section.container {
 
 header .protagonista {
   position: absolute;
+  max-width: 90vw;
   width: auto;
   height: 100%;
   max-height: 30svh;
@@ -139,8 +140,8 @@ main img.principal {
   position: absolute;
   bottom: 10svh;
   right: 60vw;
-  width: 250px;
-  height: 250px;
+  width: 60vw;
+  height: 35svh;
   object-fit: contain;
   animation: to-up 1s linear both 15s;
   z-index: 2;
