@@ -17,7 +17,7 @@ export class MarcoComponent {
       this.titulo.nativeElement.style.animation = 'none';
       setTimeout(() => (this.titulo.nativeElement.style.opacity = 0), 10000);
 
-      // setTimeout(() => this.route.navigate(['confirmacion']), 20000);
+      setTimeout(() => this.route.navigate(['confirmacion']), 20000);
     }, 3000);
   }
 }
