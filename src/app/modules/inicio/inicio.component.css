@@ -82,8 +82,7 @@
 }
 
 .container h2 {
-  animation: left-to-right 5s linear both 1s;
-  animation-delay: 5s;
+  animation: left-to-right 5s linear both 5s;
   color: var(--color-primary, #005dd6);
   text-shadow: 0px 5px 5px #fffd;
 }
@@ -106,26 +105,30 @@
 }
 
 .container h3 {
-  animation: right-to-left 5s linear both 1s;
-  animation-delay: 10s;
+  animation: right-to-left 5s linear both 10s;
   color: var(--color-secondary, #ff00ee);
   text-shadow: 0px 5px 5px #000d;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes right-to-left {
   0% {
     opacity: 0;
-    transform: translateX(50vw);
+    display: none;
+    /* transform: translateX(50vw); */
   }
   10% {
+    display: block;
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
   90% {
+    display: block;
     opacity: 1;
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -144,7 +147,7 @@
 }
 
 .container .decoracion {
-  position: absolute;
+  position: fixed;
   top: 100vh;
   left: 0;
   width: 50vw;
@@ -255,7 +258,7 @@
 .container .personaje4,
 .container .personaje5 {
   z-index: 2;
-  position: absolute;
+  position: sticky;
   top: 40svh;
   width: 50vw;
   height: auto;
@@ -278,7 +281,7 @@
 }
 
 .container .personaje5 {
-  animation: to-left 5s linear both 11s;
+  animation: to-left 5s linear both 5s;
 }
 
 @keyframes to-left {
@@ -290,3 +293,4 @@
     transform: translateX(-150vw);
   }
 }
+
