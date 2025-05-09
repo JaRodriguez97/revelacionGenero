@@ -12,13 +12,13 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () =>
       import('./modules/inicio/inicio.module').then((m) => m.InicioModule),
-    // title: 'Algo Ocurre Bajo el Mar',
+    title: 'Algo Ocurre en Kame House',
   },
   {
     path: 'marco',
     loadChildren: () =>
       import('./modules/marco/marco.module').then((m) => m.MarcoModule),
-    // title: 'Protagonista Cumple 1 añito',
+    title: 'Bebé con género sorpresa',
   },
   {
     path: 'confirmacion',
@@ -26,7 +26,7 @@ const routes: Routes = [
       import('./modules/confirmacion/confirmacion.module').then(
         (m) => m.ConfirmacionModule
       ),
-    // title: 'Confirma tu Asistencia al Mejor Evento de Atlantica',
+    title: 'Confirma tu Asistencia a nuestro evento',
   },
   {
     path: '**',
