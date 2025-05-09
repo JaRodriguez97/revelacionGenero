@@ -7,6 +7,7 @@ section.container {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 header {
@@ -20,7 +21,7 @@ header {
 }
 
 header img {
-  animation: to-down 10s linear both .5s;
+  animation: to-down 10s linear both 0.5s;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
@@ -83,7 +84,9 @@ header h2 strong {
 
 main {
   bottom: 0;
-  position: absolute;
+  
+  position: fixed;
+  z-index: 1;
 }
 
 main .personaje2 {
@@ -145,20 +148,23 @@ main .confirmacion {
   font-size: 2em;
   width: 100%;
   padding: 0 10px;
-  position: absolute;
+  position: fixed;
   bottom: 25svh;
   animation: to-top 1s linear both 10s;
   z-index: 10;
+
   gap: 5svh;
 }
 
 @keyframes to-top {
   0% {
     opacity: 0;
+    display: none;
     transform: translateY(100svh);
   }
   100% {
     opacity: 1;
+    display: flex;
     transform: translateY(0);
   }
 }
